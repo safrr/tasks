@@ -70,8 +70,8 @@ SELECT all_stops.street_id AS "Street ID",  street_name AS "Street Name", all_st
        COALESCE(drugs_st.searches, 0) AS "Drugs crimes count",
        COALESCE(weapons_cr.crimes, 0) AS "Weapons crimes count",
        COALESCE(weapons_st.searches, 0) AS "Weapons stop-AND-search count",
-       COALESCE(thefts_cr.crimes, 0) AS "Weapons crimes count",
-       COALESCE(thefts_st.searches, 0) AS "Weapons stop-AND-search count"
+       COALESCE(thefts_cr.crimes, 0) AS "Theft crimes count",
+       COALESCE(thefts_st.searches, 0) AS "Theft stop-AND-search count"
 FROM CTE_all_stops_and_searches
          AS all_stops
          LEFT JOIN CTE_crimes_drugs drugs_cr ON all_stops.street_id = drugs_cr.street_id AND all_stops.date = drugs_cr.date
