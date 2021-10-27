@@ -33,8 +33,7 @@ public class Main {
             "options:\n" +
             "-Dhelp  Displays help message\n" +
             "next three options required to be input together:\n" +
-            "-Dstart=2021-08  Set 2021-08 as start date\n" +
-            "-Dend=2021-09  Set 2021-09 as end date\n" +
+            "-Ddate=2021-08  Set 2021-08 as date\n"
             "-Dmethod='value'  Set 'value' as 'crimes' for Crimes, or 'stops' for stops and searches\n" +
             "\n" +
             "if you selected method option as 'crimes' you need to add path to file with list of existing coordinates:\n" +
