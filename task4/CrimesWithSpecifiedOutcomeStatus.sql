@@ -6,7 +6,6 @@ FROM
             streets.s_name AS "Street name",
             outcome_statuses.os_category AS "Outcome category value",
             (COUNT(streets.s_name) OVER(PARTITION BY outcome_statuses.os_category, streets.s_name)) "Crimes by street",
-            (COUNT(streets.s_name) OVER(PARTITION BY outcome_statuses.os_category)) "Total crimes by outcome"
      FROM crimes
          INNER JOIN locations ON crimes.c_location = locations.l_id
          INNER JOIN streets ON locations.l_street = streets.s_id
