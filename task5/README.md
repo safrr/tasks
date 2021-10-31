@@ -8,4 +8,4 @@ developer:\
 username: developerAnya\
 password: developerAnya\
 full name: developer Anna Safr\
-email: anya.safrr@gmail.com\
+email: anya.safrr@gmail.com
