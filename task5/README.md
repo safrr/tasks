@@ -1,4 +1,4 @@
-Jenkins credentials:<br />
+Jenkins credentials:\
 admin: <br />
 username: adminAnya<br />
 password: adminAnya<br />
